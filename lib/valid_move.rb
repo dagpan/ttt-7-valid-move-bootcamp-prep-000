@@ -4,7 +4,7 @@ board = [" "," "," "," "," "," "," "," "," "]
 
 def valid_move?(board, ind)
   if ind.between?(0, 9) 
-     if position_taken(board, play = ind)
+     if position_taken(board, play = ind) == 
         return false
      else
         return true
