@@ -7,7 +7,7 @@ def valid_move?(board, ind)
      if position_taken(board, play = ind) == false
         return true
      else
-        return true
+        return false
      end
   else
      return false
