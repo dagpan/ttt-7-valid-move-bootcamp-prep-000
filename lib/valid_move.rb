@@ -4,12 +4,14 @@ board = [" "," "," "," "," "," "," "," "," "]
 
 def valid_move?(board, ind)
   if ind.between?(0, 9) 
-     if position_taken(board, play = ind) == 
-        return false
+     if position_taken(board, play = ind) == false
+        return true
      else
         return true
      end
-  
+  else
+     return false
+  end
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
